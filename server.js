@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 2323;
 io.on('connection', function (socket) {
     console.log("Socket created at : " + socket.id)
     socket.on('play', function (data) {
-        socket.broadcast.emit('play', data)
+        io.sockets.emit('play', data)
     })
 })
 
