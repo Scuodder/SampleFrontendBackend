@@ -7,5 +7,9 @@
   "main": "server.js",
   "author": "Scuodder",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^4.16.2",
+    "socket.io": "^2.0.4"
+  }
 }
